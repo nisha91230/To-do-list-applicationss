@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Real-Time Stock Ticker Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>📊 Real-Time Stock Ticker Dashboard</h1>
+
+    <table id="stocks-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Symbol</th>
+                <th>Price ($)</th>
+                <th>Change (%)</th>
+                <th>Last Updated</th>
+            </tr>
+<tr>
+<th>1</th>
+<th>AAPL</th>
+<th>146,83</th>
+<th>+0.24</th>
+<th>3:35:18 pm</th>
+</tr>
+<tr>
+<th>2</th>
+<th>TSLA</th>
+<th>720,45</th>
+<th>+0.03</th>
+<th>3:35:18 pm</th>
+</tr>
+<tr>
+<th>3</th>
+<th>GOOG</th>
+<th>2893,10</th>
+<th>+0.17</th>
+<th>3:35:18 pm</th>
+</tr>
+        </thead>
+        <tbody id="stocks-body">
+            <!-- Stock rows inserted here -->
+
+        </tbody>
+    </table>
+
+    <h2>Add New Stock</h2>
+    <input id="symbol" placeholder="Symbol" />
+    <input id="price" placeholder="Price" />
+    <button onclick="addStock()">Add Stock</button>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
